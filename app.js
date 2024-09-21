@@ -5,7 +5,7 @@ const PORT=process.env.PORT || 3000
 const userRoute=require("./routes/userRoutes")
 
 const app=express()
-
+db.DBConnection()
 
 app.use(express.json())
 app.use(BodyParser.json())
