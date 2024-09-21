@@ -5,7 +5,7 @@ const DB_URL=process.env.DB_URL
 
 
 
-const DBConnection= async()=>{
+exports.DBConnection= async()=>{
     try {
       const mongo= await mongoose.connect(DB_URL)
         console.log(`MongoDB Connected: ${mongo.connection.host}`)
@@ -15,4 +15,3 @@ const DBConnection= async()=>{
     }
 }
 
-DBConnection()
